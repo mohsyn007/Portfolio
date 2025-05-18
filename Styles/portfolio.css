@@ -161,3 +161,27 @@ footer input[type="text"] ,footer input[type="email"],footer input[type="textare
     margin-bottom: 24px;
     border: none;
 }
+
+.hide {
+    display: none;
+}
+
+/* Media query and resposive  */
+@media screen and (max-width:576px) {
+
+    .skills-container, .resume-container,footer,.about-items{
+        display: flex;
+        flex-direction: column;
+
+    }
+    footer,.about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+   footer input[type="text"] ,footer input[type="email"],footer input[type="textarea"]{
+    width: calc(100% - 40px);
+   }
+   
+}
